@@ -25,7 +25,6 @@ const fetchMyIP = function(callback) {
     }
     
     callback(null, data.ip);
-    return data.ip;
     
   });
 };
@@ -52,7 +51,6 @@ const fetchCoordsByIP = function(ip, callback) {
     latlongObj["latitude"] = data.latitude;
     latlongObj["longitude"] = data.longitude;
     callback(null, latlongObj);
-    return latlongObj;
   });
 };
 
@@ -92,7 +90,6 @@ const fetchISSFlyOverTimes = function(coords, callback) {
     }
     
     callback(null, parsedbody.response);
-    return parsedbody.response;
   });
 };
 
